@@ -1,4 +1,15 @@
 <?php
+/*
+Plugin Name: WordPress Special Usernames
+Plugin URI: https://github.com/mirzazeyrek/wordpress-special-usernames
+Description: Allow special characters in usernames.
+Tags: username, multi-site, special characters, restrictions
+Version: 1.0
+Author: Ugur Mirza Zeyrek
+Author URI: http://mirzazeyrek.wordpress.com
+*/
+// Prevent direct calls
+if(!defined('ABSPATH')) exit;
 
 /**
  * Allow special usernames
