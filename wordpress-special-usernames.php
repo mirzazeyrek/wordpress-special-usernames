@@ -25,7 +25,7 @@ if ( ! empty ( $error_name )
       && ( $error_name == __( 'Usernames can only contain lowercase letters (a-z) and numbers.' ) 
  	|| $error_name == __( 'Username must be at least 4 characters.' ) )
        && $result['user_name'] == $result['orig_username'] 
-       && ! preg_match( '/[^-a-z0-9]/', $result['user_name'] ) 
+       && ! preg_match( '/[^-_a-z0-9]/', $result['user_name'] ) 
    ) {
      unset ( $result[ 'errors' ]->errors[ 'user_name' ] );
      return $result;
